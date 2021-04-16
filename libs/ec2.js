@@ -3,7 +3,7 @@ const ec2 = new AWS.EC2({region:"us-east-1"});
 
 /**
  * Delete volumes
- * @param {array} volumes 
+ * @param {array} volumes an array of volumes
  */
 async function deleteVolumes(volumes){
     for (i=0; i<volumes.length; i++){
